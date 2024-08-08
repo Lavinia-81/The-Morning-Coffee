@@ -362,6 +362,8 @@ right: 0;
 
 .products .box-container .box .image img {
   padding: .3rem;
+  width: 250px;
+  height: 300px;
 }
 
 .products .box-container .box .content h3 {
