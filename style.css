@@ -47,6 +47,7 @@ section {
   padding: 2rem 7%;
 }
 
+
 .heading {
   text-align: center;
   color: #fff;
@@ -59,6 +60,7 @@ section {
   color: var(--main-color);
   text-transform: uppercase;
 }
+
 
 .btn {
   margin-top: 1rem;
@@ -74,6 +76,7 @@ section {
 .btn:hover {
   letter-spacing: .2rem;
 }
+
 .header {
   background: var(--black);
   display: flex;
@@ -94,7 +97,7 @@ section {
 .header .navbar a {
   margin: 0 1rem;
   font-size: 1.6rem;
-  text-decoration: none;
+  text-transform: capitalize;
   color: #fff;
 }
 
@@ -102,6 +105,16 @@ section {
   color: var(--main-color);
   border-bottom: .1rem solid var(--main-color);
   padding-bottom: .5rem;
+}
+
+.header .navbar #close-navbar {
+position: absolute;
+top: 1.5rem;
+right: 2rem;
+font-size: 4rem;
+cursor: pointer;
+color: #444;
+display: none;
 }
 
 .header .icons div {
@@ -115,7 +128,7 @@ section {
   color: var(--main-color);
 }
 
-#menu-btn {
+.header #menu-btn {
   display: none;
   border-radius: 10px;
 }
@@ -233,11 +246,11 @@ right: 0;
 }
 
 .home .content p {
-  font-size: 1rem;
+  font-size: 1.3rem;
   text-transform: lighter;
   line-height: 1.8;
   padding: 1rem 0;
-  color: #eee;
+  color: #e8b97f;
 }
 
 .about .row {
@@ -256,21 +269,26 @@ right: 0;
   border-radius: 10px;
 }
 
-.about .row .content {
-  flex: 1 1 45rem;
-  padding: 2rem;
-}
-
 .about .row .content h3 {
   font-size: 3rem;
   color: #fff;
 }
 
-.about .row .content p {
+.about .row .content {
   font-size: 1.6rem;
   color: #ccc;
   padding: 1rem 0;
   line-height: 1.8;
+  flex: 1 1 45rem;
+  padding: 2rem;
+}
+
+.line {
+  margin-top: 35px;
+  margin-bottom: 35px;
+  width: 100px;
+  height: 3px;
+  background: var(--main-color);
 }
 
 .menu .box-container {
@@ -323,6 +341,7 @@ right: 0;
 .menu .box-container .box:hover {
   background: rgb(154, 93, 14);
 }
+
 .menu .box-container .box:hover > * {
   background: var(--black);
 }
@@ -452,8 +471,14 @@ right: 0;
   object-fit: cover;
 }
 
+/*.contact .row .image img {
+  width: 100%; 
+} */
+
 .contact .row form {
-  flex: 1 1 45rem;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 45rem;
+       flex: 1 1 45rem;
   padding: 4rem;
   text-align: center;
 }
@@ -556,11 +581,11 @@ color: var(--main-color);
   text-align: center;
 }
 
-.footer .share {
+.footer .box-container {
   padding: 1rem 0;
 }
-
-.footer .share a {
+ 
+.footer .box-container a {
   height: 5rem;
   width: 5rem;
   line-height: 5rem;
@@ -573,6 +598,19 @@ color: var(--main-color);
 
 .footer .share a:hover {
   background-color: var(--main-color);
+}
+
+.footer .box-container .box h3 {
+  font-size: 2.2rem;
+  color: fff;
+  padding: 1rem 0;
+}
+
+.footer .box-container .box p {
+  font-size: 1.5rem;
+  color: #ccc;
+  line-height: 2;
+  padding: 1rem 0;
 }
 
 .footer .links {
@@ -603,6 +641,7 @@ color: var(--main-color);
 
 .footer .credit span {
   color: var(--main-color);
+  text-align: center;
 }
 
 
@@ -620,7 +659,7 @@ color: var(--main-color);
     font-size: 55%;
   }
  .header {
-  padding: 1.5rem 2rem;
+  padding: 1.5rem 5%;
  }
  .section {
   padding: 2rem;
@@ -628,25 +667,41 @@ color: var(--main-color);
 }
 
 @media (max-width: 768px) {
-  #menu-btn {
+  .header #menu-btn {
     display: inline-block;
   }
   .header .navbar {
-    position: absolute;
-    top: 100%; 
-    right: -100%;
+    position: fixed;
+    top: 0; 
+    right: -150%;
     background: #fff;
     width: 30rem;
-    height: calc(100vh - 91.5rem);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+             -ms-flex-flow: column;
+                  flex-flow: column;
+    -webkit-box-pack: center;
+             -ms-flex-pack: center;
+                justify-content: center;
+    z-index: 1200;            
   }
-  .header .navbar .active {
+
+  .header .navbar #close-navbar {
+    display: block;
+  }
+
+  .header .navbar.active {
+    box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.8);
     right: 0;
   }
   .header .navbar a {
     color: var(--black);
     display: block;
-    margin: 1.5rem;
-    padding: .5rem;
+    margin: 1rem 0;
+    text-align: center;
     font-size: 2rem;
   }
   .header .search-form {
@@ -656,10 +711,10 @@ color: var(--main-color);
   .home {
     background-position: left;
     justify-content: center;
-    text-align: center;
+    align-items: center;
   }
   .home .content h3 {
-    font-size: 4.5rem;
+    font-size: 4rem;
   }
   .home .content p {
     font-size: 1.5rem;
