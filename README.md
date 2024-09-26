@@ -31,5 +31,5 @@ Welcome to **The Morning Coffee** repository! This project contains the code for
 To get started with this project, clone the repository and open the `index.html` file in your browser. Explore the code in the `html`, `css`, and `js` directories to understand how each part contributes to the overall functionality.
 
 ```bash
-git clone [https://github.com/Lavinia-81/The-Morning-Coffee.git
-cd the-morning-coffee
+git clone https://github.com/Lavinia-81/The-Morning-Coffee.git
+cd The-Morning-Coffee
