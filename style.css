@@ -240,7 +240,8 @@ section {
 }
 
 .home .content {
- max-width: 60rem;
+ max-width: 50rem;
+ margin-top: 1rem; 
  background: rgba(211, 173, 127, 0.7);
  padding: 2rem;
  border-radius: 10px;
@@ -252,7 +253,6 @@ section {
   color: var(--black);
   margin-bottom: 1rem;
 }
-
 
 .home .content p {
   font-size: 1.4rem;
@@ -413,9 +413,9 @@ section {
 }
 
 .products .box-container .box .content .price span {
- text-decoration: line-through;
- font-weight: lighter;
- font-size: 1.5rem;
+  text-decoration: line-through;
+  font-weight: lighter;
+  font-size: 1.5rem;
 }
 
 .review .box-container {
