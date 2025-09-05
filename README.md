@@ -73,10 +73,13 @@ Crafted with curiosity, creativity, and respect for originality.
 
 ---------
 
+🌐 Live Preview
+🔗 View Project here: https://lavinia-81.github.io/The-Morning-Coffee/
+
+-----------
+
 ## 🚀 Getting Started
-
 To explore the project locally:
-
 ```bash
 git clone https://github.com/Lavinia-81/The-Morning-Coffee.git
 cd The-Morning-Coffee
