@@ -1,0 +1,12 @@
+Copyright © 2025 Maria
+
+This project was created for educational and portfolio purposes only.  
+It is intended as a personal exercise in practicing front-end development, including HTML, CSS, JavaScript, UI design, and responsive layout techniques.
+
+All coffee brand names, logos, and references included are the property of their respective owners.  
+They are used purely for illustrative and studio purposes, and do not imply any affiliation, endorsement, or commercial relationship.
+
+This project is not for sale, distribution, or commercial use.  
+No part of it may be reused or republished for profit without explicit permission from the author.
+
+Crafted with curiosity, creativity, and respect for originality.

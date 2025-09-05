@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <title>The Morning Coffee</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!---header section starts-->
+<header class="header">
+  <a href="#" class="logo">
+    <img src="img/logo_coffee.png" alt="image logo">
+  </a>
+
+  <nav class="navbar">
+    <div id="close-navbar" class="fas fa-times"></div>
+    <a href="#">Home</a>
+    <a href="#about">about</a>
+    <a href="#menu">menu</a>
+    <a href="#products">products</a>
+    <a href="#review">review</a>
+    <a href="#contact">contact</a>
+    <a href="#blogs">blog</a>
+  </nav>
+
+  <div class="icons">
+    <div class="fas fa-search" id="search-btn"></div>
+    <div class="fas fa-shopping-cart" id="cart-btn"><span id="cart-count">0</span></div>
+    <div class="fas fa-bars" id="menu-btn"></div>
+  </div>
+  <div class="search-form">
+    <input type="search" id="search-box" placeholder="search here...">
+    <label for="search-box" class="fas fa-search"></label>
+  </div>
+  <div class="cart-items-container">
+    <div class="cart-item"></div>
+    <div class="cart-total"></div>
+      <h3 class="price">Total: £<span id="cart-total">0.00</span></h3>
+      <a href="#" class="btn" id="checkout-btn">checkout now</a>
+    </div>
+  </div>
+</header>
+<!--header section ends-->
+
+<!--home section starts-->
+<section class="home" id="home">
+  <div class="content">
+  <h3>Awaken Your Senses with Every Sip of Coffee</h3>
+  <p>Start your day with the aroma of freshly brewed perfection. Our coffee is sourced from sustainable farms, roasted with care, and crafted to elevate your mornings. Whether you crave bold intensity or smooth elegance, each cup is a moment of pure indulgence — made for those who appreciate quality in every detail.</p>
+    <a href="#" class="btn" id="discoverBtn">Discover Your Blend</a>
+</div>
+</section>
+<!--home section ends-->
+
+<!--about section starts-->
+<section class="about" id="about">
+  <h1 class="heading"><span>about</span> us </h1>
+  
+  <div class="row">
+    <div class="image">
+      <img src="img/img1.png" alt="about">
+    </div>
+
+    <div class="content">
+      <h3>What Makes Our Coffee Truly Exceptional</h3>
+      <div class="line"></div>
+        <p>Every cup we serve begins with handpicked beans, sourced from high-altitude farms where quality is nurtured by nature. Roasted in small batches to preserve their character, our coffee delivers a rich, aromatic experience that awakens the senses and comforts the soul.</p>
+        <p>What sets us apart is not just the flavor — it's the philosophy. We believe coffee should be more than a beverage; it should be a ritual of care, a moment of pause, and a celebration of craftsmanship. From bean to brew, we honour the journey so you can savour the destination.</p>
+      <!-- <a href="#" class="btn">learn more</a> -->
+    </div>
+  </div>
+</section>
+<!--about section ends-->
+
+<!--menu section starts-->
+<section class="menu" id="menu">
+  <h1 class="heading"> our <span> menu </span></h1>
+  <div class="box-container">
+
+    <div class="box">
+      <img src="img/img2.png" width="250px"  alt="menu">
+      <h3>Cappuccino</h3>
+      <div class="price">£5.00 <span> 6.70 </span></div>
+      <a href="#" class="btn add-to-cart">add to cart</a>
+    </div>
+
+    <div class="box">
+      <img src="img/img3.png" width="250px" alt="">
+      <h3>Cortado</h3>
+      <div class="price">£3.20 <span> 4.99 </span></div>
+      <a href="#" class="btn add-to-cart">add to cart</a>
+    </div>
+
+    <div class="box">
+      <img src="img/img4.png" width="250px"  alt="">
+      <h3>Latte Macchiato</h3>
+      <div class="price">£5.00 <span> 6.20 </span></div>
+      <a href="#" class="btn add-to-cart">add to cart</a>
+    </div>
+
+    <div class="box">
+      <img src="img/img5.png" width="250px"  alt="">
+      <h3>Piccolo Latte</h3>
+      <div class="price">£4.99 <span> 5.99 </span></div>
+      <a href="#" class="btn add-to-cart">add to cart</a>
+    </div>
+
+    <div class="box">
+      <img src="img/img6.png" width="250px" alt="">
+      <h3>Mocha</h3>
+      <div class="price">£5.99 <span> 7.45 </span></div>
+      <a href="#" class="btn add-to-cart">add to cart</a>
+    </div>
+
+    <div class="box">
+      <img src="img/img7.png" width="250px" alt="">
+      <h3>Flat White</h3>
+      <div class="price">£3.70 <span> 4.99 </span></div>
+      <a href="#" class="btn add-to-cart">add to cart</a>
+    </div>
+  </div>
+</section>
+<!--menu section ends-->
+
+<!--products section starts-->
+<section class="products" id="products">
+  <h1 class="heading">our <span>products</span></h1>
+  <div class="box-container">
+
+    <div class="box">
+      <div class="icons">
+        <a href="#" class="fas fa-shopping-cart"></a>
+        <a href="#" class="fas fa-heart"></a>
+        <a href="#" class="fas fa-eye"></a>
+      </div>
+      <div class="image">
+        <img src="img/img8.png" width="250px" alt="">
+      </div>
+      <div class="content">
+        <h3>Lavazza </h3>
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+          <div class="price">£5.00 <span> £8.00</span></div>
+          <a href="#" class="btn add-to-cart">add to cart</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="box">
+      <div class="icons">
+        <a href="#" class="fas fa-shopping-cart"></a>
+        <a href="#" class="fas fa-heart"></a>
+        <a href="#" class="fas fa-eye"></a>
+      </div>
+      <div class="image">
+        <img src="img/img9.png" width="250px" alt="">
+      </div>
+      <div class="content">
+        <h3>Nescafé </h3>
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+          <div class="price">£6.99 <span> £8.99</span></div>
+          <a href="#" class="btn add-to-cart">add to cart</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="box">
+      <div class="icons">
+        <a href="#" class="fas fa-shopping-cart"></a>
+        <a href="#" class="fas fa-heart"></a>
+        <a href="#" class="fas fa-eye"></a>
+      </div>
+      <div class="image">
+        <img src="img/img10.png" width="250px" alt="">
+      </div>
+      <div class="content">
+        <h3>Peet’s Coffe</h3>
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+          <div class="price">£5.29 <span> £7.25</span></div>
+          <a href="#" class="btn add-to-cart">add to cart</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="box">
+      <div class="icons">
+        <a href="#" class="fas fa-shopping-cart"></a>
+        <a href="#" class="fas fa-heart"></a>
+        <a href="#" class="fas fa-eye"></a>
+      </div>
+      <div class="image">
+        <img src="img/img11.png" width="250px" alt="">
+      </div>
+      <div class="content">
+        <h3>Tim Hortons</h3>
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+          <div class="price">£5.69 <span> £7.89</span></div>
+          <a href="#" class="btn add-to-cart">add to cart</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="box">
+      <div class="icons">
+        <a href="#" class="fas fa-shopping-cart"></a>
+        <a href="#" class="fas fa-heart"></a>
+        <a href="#" class="fas fa-eye"></a>
+      </div>
+      <div class="image">
+        <img src="img/img12.png" width="250px" alt="" >
+      </div>
+      <div class="content">
+        <h3>Jacobs</h3>
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+          <div class="price">£7.15 <span> £9.50</span></div>
+          <a href="#" class="btn add-to-cart">add to cart</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="box">
+      <div class="icons">
+        <a href="#" class="fas fa-shopping-cart"></a>
+        <a href="#" class="fas fa-heart"></a>
+        <a href="#" class="fas fa-eye"></a>
+      </div>
+      <div class="image">
+        <img src="img/img13.png" width="250px" alt="">
+      </div>
+      <div class="content">
+        <h3>Tchibo</h3>
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+          <div class="price">£6.99 <span> £10.99</span></div>
+          <a href="#" class="btn add-to-cart">add to cart</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="box">
+      <div class="icons">
+        <a href="#" class="fas fa-shopping-cart"></a>
+        <a href="#" class="fas fa-heart"></a>
+        <a href="#" class="fas fa-eye"></a>
+      </div>
+      <div class="image">
+        <img src="img/img14.png" width="250px" alt="">
+      </div>
+      <div class="content">
+        <h3>Illy</h3>
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+          <div class="price">£5.79 <span> £9.89</span></div>
+          <a href="#" class="btn add-to-cart">add to cart</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="box">
+      <div class="icons">
+        <a href="#" class="fas fa-shopping-cart"></a>
+        <a href="#" class="fas fa-heart"></a>
+        <a href="#" class="fas fa-eye"></a>
+      </div>
+      <div class="image">
+        <img src="img/img15.png" width="260px" alt="">
+      </div>
+      <div class="content">
+        <h3>Dunkin’</h3>
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+          <div class="price">£9.59 <span> £13.20</span></div>
+          <a href="#" class="btn add-to-cart">add to cart</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="box">
+      <div class="icons">
+        <a href="#" class="fas fa-shopping-cart"></a>
+        <a href="#" class="fas fa-heart"></a>
+        <a href="#" class="fas fa-eye"></a>
+      </div>
+      <div class="image">
+        <img src="img/img16.png" width="250px" alt="">
+      </div>
+      <div class="content">
+        <h3>Tim Horton</h3>
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+          <div class="price">£8.99 <span> £11.99</span></div>
+          <a href="#" class="btn add-to-cart">add to cart</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--products section starts-->
+
+ <!--review section starts--> 
+ <section class="review" id="review">
+  <h1 class="heading">customer's <span>review</span></h1>
+  <div class="box-container">
+    <div class="box">
+      <img src="img/quote.png" width="100px" alt="" class="quote">
+      <p>“Aromatic, smooth, and deeply satisfying — this coffee has become my morning ritual.”</p>
+      <img src="img/man1.png" 
+      height="200px" class="user" alt="">
+      <h3>john deo</h3>
+      <div class="stars">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half-alt"></i>
+      </div>
+    </div>
+
+    <div class="box">
+      <img src="img/quote.png" width="100px" alt="" class="quote">
+      <p>“The attention to detail in every blend is remarkable. It’s not just coffee, it’s an experience.”</p>
+      <img src="img/man2.png" class="user" alt="">
+      <h3>john deo</h3>
+      <div class="stars">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half-alt"></i>
+      </div>
+    </div>
+
+    <div class="box">
+      <img src="img/quote.png" width="100px" alt="" class="quote">
+      <p>“Fast delivery, beautiful packaging, and a taste that rivals any café. Highly recommended!”</p>
+      <img src="img/man3.png" class="user" alt="">
+      <h3>john deo</h3>
+      <div class="stars">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half-alt"></i>
+      </div>
+    </div>
+  </div>
+ </section>
+ <!--review section ends-->
+
+ <!--contact section start-->
+ <section class="contact" id="contact">
+  <h1 class="heading"><span>contact</span> us </h1>
+  <div class="row">
+    <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.9358763225523!2d-0.1293790246367338!3d51.51439241019412!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604cd2fa45b6b%3A0x88cf5801f76b8d84!2sMonmouth%20Coffee%20Company!5e0!3m2!1sen!2suk!4v1700319941739!5m2!1sen!2suk" width="500px" height="450px" style="border: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+   <form action="">
+    <h3>get in touch</h3>
+    <div class="inputBox">
+      <span class="fas fa-user"></span>
+      <input type="text" placeholder="name">
+    </div>
+
+    <div class="inputBox">
+      <span class="fas fa-envelope"></span>
+      <input type="email" placeholder="email">
+    </div>
+
+    <div class="inputBox">
+      <span class="fas fa-phone"></span>
+      <input type="number" placeholder="number">
+    </div>
+      <input type="submit" value="contact now" class="btn">
+   </form>
+  </div>
+ </section>
+ <!--contact section ends-->
+
+ <!--blog section starts-->
+ <section class="blogs" id="blogs">
+  <h1 class="heading"> our <span>blog</span></h1>
+  <div class="box-container">
+    
+    <div class="box">
+      <div class="image">
+        <img src="img/img17.png" alt="">
+      </div>
+      <div class="content">
+        <a href="#" class="title">Tasty and Refreshing Coffee</a>
+      <span>Short Espresso</span>
+      <p>Rich in aroma and smooth in texture, our coffee is crafted to awaken your senses and elevate your day. Each blend is a celebration of quality — sourced ethically, roasted with precision, and served with care. Whether you're starting your morning or taking a mindful pause, this is the cup that makes every moment feel intentional.</p>
+        <a href="#" class="btn add-to-cart">add to cart</a>
+      </div>
+    </div>
+
+    <div class="box">
+      <div class="image">
+        <img src="img/img18.png" alt="">
+      </div>
+      <div class="content">
+        <a href="#" class="title">Tasty and Refreshing Coffee</a>
+      <span>Frappuccino</span>
+      <p>Our signature blend is more than just a beverage — it’s a moment of calm in a busy day. With its smooth texture, rich aroma, and perfectly balanced flavor, this coffee has earned its place as a customer favorite. Whether enjoyed at sunrise or during a quiet afternoon break, it delivers comfort, clarity, and a touch of indulgence in every sip.</p>
+      <a href="#" class="btn add-to-cart">add to cart</a>
+      </div>
+    </div>
+
+    <div class="box">
+      <div class="image">
+        <img src="img/img19.png" alt="">
+      </div>
+      <div class="content">
+       <a href="#" class="title">Tasty and Refreshing Coffee</a>
+      <span>Café au Lait</span>
+      <p>Delicately roasted and full of character, our coffee offers a harmonious balance between bold flavor and smooth finish. Each cup is a testament to our commitment to quality — crafted for those who appreciate the finer details in every sip. Whether enjoyed alone or shared with company, it’s the kind of
+      <a href="#" class="btn add-to-cart">add to cart</a>
+      </div>
+    </div>
+
+    <div class="box">
+      <div class="image">
+        <img src="img/img20.png" alt="">
+      </div>
+      <div class="content">
+        <a href="" class="title">The Essence of Every Morning</a>
+        <span>Breve</span>
+        <p>Coffee is more than a beverage — it's a daily ritual, a source of comfort, and a spark of creativity. Its rich aroma and bold flavor awaken our senses, offering clarity in moments of reflection and energy when we need it most. Each cup carries warmth, connection, and a quiet invitation to pause and savor life.</p>
+      </div>
+    </div>
+
+    <div class="box">
+      <div class="image">
+        <img src="img/img21.png" alt="">
+      </div>
+      <div class="content">
+        <a href="" class="title">The Most Flavorful and Harmonious Coffee</a>
+        <span>Irish Coffe</span>
+        <p>Each morning begins with a quiet spell — the rich aroma of coffee rising like a promise. More than a drink, it’s a daily dose of energy, clarity, and warmth. With every sip, we awaken not just the body, but the spirit, ready to embrace the day with focus and grace.</p>
+      </div>
+    </div>
+
+    <div class="box">
+      <div class="image">
+        <img src="img/img22.png" alt="">
+      </div>
+      <div class="content">
+        <a href="" class="title">Morning Magic in Every Cup</a>
+        <span>Vienna Coffe</span>
+        <p>Crafted with care and brewed to perfection, our coffee offers a symphony of taste and aroma that elevates every moment. It's more than a drink — it's a gentle awakening, a comforting pause, and a daily celebration of balance and flavor. Let each sip guide you into a world of warmth, clarity, and quiet joy.</p>
+      </div>
+  </div>
+ </section>
+ <!--blog section ends-->
+
+ <!--footer section starts-->
+ <section class="footer">
+  <div class="box-container">
+    <a href="#" class="fab fa-facebook-f"></a>
+    <a href="#" class="fab fa-twitter"></a>
+    <a href="#" class="fab fa-instagram"></a>
+    <a href="#" class="fab fa-linkedin"></a>
+    <a href="#" class="fab fa-pinterest"></a>
+  </div>
+  <div class="links">
+    <a href="#home">home</a>
+    <a href="#about">about</a>
+    <a href="#menu">menu</a>
+    <a href="#products">products</a>
+    <a href="#review">review</a>
+    <a href="#contact">contact</a>
+    <a href="#blogs">blogs</a>
+  </div>
+  <div class="box-contact">
+  <div class="box">
+    <i class="fa fa-envelope" aria-hidden="true"></i>
+    <h3>E-mail</h3>
+     <p> example@gmail.com</p>
+  </div>
+
+  <div class="box">
+    <i class="fa fa-phone" aria-hidden="true"></i>
+    <h3>Call us</h3>
+    <p>+44 5432 1234</p>
+  </div>
+
+  <div class="box">
+    <i class="fa fa-clock" aria-hidden="true"></i>
+    <h3>Opnening hours</h3>
+    <p>Monday - Friday: 8:00 - 24:00
+       <br>Saturday: 8:00 - 23:00 </p>
+  </div>
+</div>
+  <div class="credit">© <span id="year"></span> Maria · Built for learning, not for selling · All brands respectfully referenced · Code brewed with care</div>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
+  
+ </section>
+ <!--footer section ends-->
+
+  <script src="script.js"></script>
+</body>
+</html>
