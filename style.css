@@ -240,6 +240,7 @@ display: none;
 
 .home .content {
  max-width: 50rem;
+ margin-top: 1rem; 
  background: rgba(211, 173, 127, 0.7);
  padding: 1rem;
  border-radius: 10px;
