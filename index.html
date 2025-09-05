@@ -37,7 +37,7 @@
   <div class="cart-items-container">
     <div class="cart-item"></div>
     <div class="cart-total"></div>
-      <h3 class="price">Total: £<span id="cart-total">0.00</span></h3>
+      <h3 class="price">Total: £<span id="cart-total">00.00</span></h3>
       <a href="#" class="btn" id="checkout-btn">checkout now</a>
     </div>
   </div>
@@ -128,7 +128,6 @@
 <section class="products" id="products">
   <h1 class="heading">our <span>products</span></h1>
   <div class="box-container">
-
     <div class="box">
       <div class="icons">
         <a href="#" class="fas fa-shopping-cart"></a>
@@ -430,7 +429,6 @@
         <a href="#" class="title">Tasty and Refreshing Coffee</a>
       <span>Short Espresso</span>
       <p>Rich in aroma and smooth in texture, our coffee is crafted to awaken your senses and elevate your day. Each blend is a celebration of quality — sourced ethically, roasted with precision, and served with care. Whether you're starting your morning or taking a mindful pause, this is the cup that makes every moment feel intentional.</p>
-        <a href="#" class="btn add-to-cart">add to cart</a>
       </div>
     </div>
 
@@ -442,7 +440,6 @@
         <a href="#" class="title">Tasty and Refreshing Coffee</a>
       <span>Frappuccino</span>
       <p>Our signature blend is more than just a beverage — it’s a moment of calm in a busy day. With its smooth texture, rich aroma, and perfectly balanced flavor, this coffee has earned its place as a customer favorite. Whether enjoyed at sunrise or during a quiet afternoon break, it delivers comfort, clarity, and a touch of indulgence in every sip.</p>
-      <a href="#" class="btn add-to-cart">add to cart</a>
       </div>
     </div>
 
@@ -454,7 +451,6 @@
        <a href="#" class="title">Tasty and Refreshing Coffee</a>
       <span>Café au Lait</span>
       <p>Delicately roasted and full of character, our coffee offers a harmonious balance between bold flavor and smooth finish. Each cup is a testament to our commitment to quality — crafted for those who appreciate the finer details in every sip. Whether enjoyed alone or shared with company, it’s the kind of
-      <a href="#" class="btn add-to-cart">add to cart</a>
       </div>
     </div>
 
@@ -535,11 +531,20 @@
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
   </script>
-
-  
  </section>
  <!--footer section ends-->
-
   <script src="script.js"></script>
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const icons = document.querySelectorAll('.box .icons a');
+
+    icons.forEach(icon => {
+      icon.addEventListener('click', function (e) {
+        e.preventDefault();
+        icon.classList.toggle('active');
+      });
+    });
+  });
+</script>
 </body>
 </html>
